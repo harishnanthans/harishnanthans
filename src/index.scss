@@ -1,0 +1,22 @@
+:root {
+  line-height: 1.5;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background: #0f0f23;
+  color: #cccccc;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 480px;
+  margin: 0 auto; /* center on wider screens */
+  max-width: 1200px; /* optional max width */
+  padding: 2rem;
+}
+
