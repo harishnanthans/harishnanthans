@@ -7,6 +7,7 @@ export default function Home() {
             I’m Harish Nanthan, 
             a Backend Software Engineer architecting simple solutions for complex problems.
             I engineer what runs quietly — but powers everything.
+            Currently working at <a>Tekion</a>.
         </p>
       </section>
     </div>
