@@ -1,18 +1,133 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" 
-      rel="stylesheet">
-    <title>Harish Nanthan</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harish Nanthan — Backend Software Engineer</title>
+<meta name="description" content="Harish Nanthan, backend engineer architecting simple solutions for complex problems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=Manrope:wght@300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+
+<nav>
+  <a class="brand" href="#top">Harish Nanthan</a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#projects">Projects</a>
+    <a class="pill pill-solid" href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+
+  <section class="hero">
+    <div class="kicker">Backend Software Engineer · Tekion</div>
+    <h1>I engineer what runs quietly — but powers everything.</h1>
+    <p>I'm Harish Nanthan, a backend engineer architecting simple solutions for complex problems.</p>
+    <div class="hero-actions">
+      <a class="pill pill-solid pill-lg" href="#projects">View projects</a>
+      <a class="pill pill-outline pill-lg" href="#contact">Get in touch</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="kicker label">01 — About</div>
+      <h2>I build the systems behind the product — fast, reliable, and quiet.</h2>
+      <p class="lede">I focus on the parts users never see — APIs, data pipelines, and the infrastructure that keeps everything running. I care about clarity: code that's easy to reason about and systems that fail gracefully. Most days I'm untangling a complex problem into something simple and durable.</p>
+      <div class="capabilities">
+        <div class="kicker label">Capabilities</div>
+        <div class="chips">
+          <span>Go</span><span>Java</span><span>Python</span><span>PostgreSQL</span><span>Redis</span><span>Apache Kafka</span><span>gRPC</span><span>Kubernetes</span><span>Docker</span><span>AWS</span><span>Microservices</span><span>Distributed Systems</span><span>System Design</span><span>Observability</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="alt">
+    <div class="wrap">
+      <div class="kicker label">02 — Experience</div>
+      <div class="job">
+        <div class="period">2023 — Present</div>
+        <div>
+          <div class="job-title"><h3>Backend Software Engineer</h3><span>Tekion</span></div>
+          <p>Building scalable backend services for the automotive retail platform — designing APIs, optimizing data flows, and keeping latency low at scale.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="period">2021 — 2023</div>
+        <div>
+          <div class="job-title"><h3>Software Engineer</h3><span>Previous Company</span></div>
+          <p>Developed microservices and event-driven pipelines, owning reliability and performance across core services.</p>
+        </div>
+      </div>
+      <div class="job">
+        <div class="period">2020 — 2021</div>
+        <div>
+          <div class="job-title"><h3>Software Engineer Intern</h3><span>Earlier Company</span></div>
+          <p>Shipped internal tooling and contributed to backend features that shortened release cycles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="kicker label sm">03 — Selected Work</div>
+      <h2 class="projects-heading">Things I've shipped.</h2>
+      <div class="cards">
+        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
+          <div class="kicker tag">Infrastructure</div>
+          <h3>Distributed Job Scheduler</h3>
+          <p>A fault-tolerant scheduler coordinating millions of tasks across nodes with at-least-once guarantees.</p>
+          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
+        </a>
+        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
+          <div class="kicker tag">Realtime</div>
+          <h3>Streaming Analytics API</h3>
+          <p>Low-latency event ingestion and querying built on Kafka and columnar storage.</p>
+          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
+        </a>
+        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
+          <div class="kicker tag">Payments</div>
+          <h3>Payments Orchestrator</h3>
+          <p>Secure, idempotent payment flows with retries, reconciliation, and audit trails.</p>
+          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
+        </a>
+        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
+          <div class="kicker tag">Platform</div>
+          <h3>API Rate Limiter</h3>
+          <p>A token-bucket limiter deployed as a sidecar, protecting services from traffic spikes.</p>
+          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt contact">
+    <div class="kicker label">04 — Contact</div>
+    <h2>Let's build something durable.</h2>
+    <p>Open to interesting backend problems and good conversations.</p>
+    <div class="contact-action">
+      <a class="pill pill-solid pill-lg" href="mailto:hello@harishnanthan.dev">hello@harishnanthan.dev</a>
+    </div>
+    <div class="social">
+      <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://x.com" target="_blank" rel="noreferrer">X / Twitter</a>
+      <a href="#">Résumé</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Harish Nanthan</span>
+    <span class="mono">Designed quietly.</span>
+  </footer>
+
+</main>
+</body>
 </html>
