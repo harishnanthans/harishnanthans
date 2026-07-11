@@ -19,6 +19,7 @@
     <a href="#work">Work</a>
     <a href="#projects">Projects</a>
     <a class="pill pill-solid" href="#contact">Contact</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
   </div>
 </nav>
 
@@ -129,5 +130,25 @@
   </footer>
 
 </main>
+
+<script>
+const themeToggle = document.getElementById('themeToggle');
+const root = document.documentElement;
+
+function applyTheme(theme) {
+  root.dataset.theme = theme;
+  themeToggle.textContent = theme === 'dark' ? '☀' : '☾';
+}
+
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = matchMedia('(prefers-color-scheme: dark)').matches;
+applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+
+themeToggle.addEventListener('click', () => {
+  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  applyTheme(nextTheme);
+  localStorage.setItem('theme', nextTheme);
+});
+</script>
 </body>
 </html>
