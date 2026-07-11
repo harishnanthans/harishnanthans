@@ -9,7 +9,7 @@
   --shadow: rgba(0, 0, 0, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: white) {
   :root {
     --bg: oklch(0.129 0.042 264.695);
     --fg: oklch(0.984 0.003 247.858);
