@@ -1,154 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harish Nanthan — Backend Software Engineer</title>
-<meta name="description" content="Harish Nanthan, backend engineer architecting simple solutions for complex problems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300..800&family=Manrope:wght@300..800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harish Nanthan</title>
+  <meta name="description" content="Harish Nanthan, software engineer.">
 </head>
-<body id="top">
 
-<nav>
-  <a class="brand" href="#top">Harish Nanthan</a>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#work">Work</a>
-    <a href="#projects">Projects</a>
-    <a class="pill pill-solid" href="#contact">Contact</a>
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">☾</button>
-  </div>
-</nav>
+<body>
 
-<main>
+  <p style="text-align: right;"><a
+      href="https://harishnanthans.github.io/harishnanthans/">https://harishnanthans.github.io/harishnanthans/</a></p>
 
-  <section class="hero">
-    <div class="kicker">Backend Software Engineer · Tekion</div>
-    <h1>I engineer what runs quietly — but powers everything.</h1>
-    <p>I'm Harish Nanthan, a backend engineer architecting simple solutions for complex problems.</p>
-    <div class="hero-actions">
-      <a class="pill pill-solid pill-lg" href="#projects">View projects</a>
-      <a class="pill pill-outline pill-lg" href="#contact">Get in touch</a>
-    </div>
-  </section>
+  <p>
+    Software Engineer at <a target="_blank" href="https://tekion.com">Tekion</a>,
+    I build backend systems and developer tooling &mdash; lately a lot of work around AI agents.
+  </p>
 
-  <section id="about">
-    <div class="wrap">
-      <div class="kicker label">01 — About</div>
-      <h2>I build the systems behind the product — fast, reliable, and quiet.</h2>
-      <p class="lede">I focus on the parts users never see — APIs, data pipelines, and the infrastructure that keeps everything running. I care about clarity: code that's easy to reason about and systems that fail gracefully. Most days I'm untangling a complex problem into something simple and durable.</p>
-      <div class="capabilities">
-        <div class="kicker label">Capabilities</div>
-        <div class="chips">
-          <span>Go</span><span>JS</span><span>Python</span><span>PostgreSQL</span><span>Redis</span><span>Apache Kafka</span><span>Docker</span><span>AWS</span><span>Microservices</span><span>Distributed Systems</span><span>System Design</span><span>Observability</span>
-        </div>
-      </div>
-    </div>
-  </section>
+  <p>
+    <a href="mailto:harishnanthans@gmail.com">Mail</a>
+    <span>|</span>
+    <a href="www.linkedin.com/in/harishnanthans">Linked IN</a>
+    <span>|</span>
+    <a href="https://github.com/harishnanthans">Github</a>
+  </p>
 
-  <section id="work" class="alt">
-    <div class="wrap">
-      <div class="kicker label">02 — Experience</div>
-      <div class="job">
-        <div class="period">2023 — Present</div>
-        <div>
-          <div class="job-title"><h3>Backend Software Engineer</h3><span>Tekion</span></div>
-          <p>Building scalable backend services for the automotive retail platform — designing APIs, optimizing data flows, and keeping latency low at scale.</p>
-        </div>
-      </div>
-      <div class="job">
-        <div class="period">2021 — 2023</div>
-        <div>
-          <div class="job-title"><h3>Software Engineer</h3><span>Previous Company</span></div>
-          <p>Developed microservices and event-driven pipelines, owning reliability and performance across core services.</p>
-        </div>
-      </div>
-      <div class="job">
-        <div class="period">2020 — 2021</div>
-        <div>
-          <div class="job-title"><h3>Software Engineer Intern</h3><span>Earlier Company</span></div>
-          <p>Shipped internal tooling and contributed to backend features that shortened release cycles.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <hr>
 
-  <section id="projects">
-    <div class="wrap">
-      <div class="kicker label sm">03 — Selected Work</div>
-      <h2 class="projects-heading">Things I've shipped.</h2>
-      <div class="cards">
-        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
-          <div class="kicker tag">Infrastructure</div>
-          <h3>Distributed Job Scheduler</h3>
-          <p>A fault-tolerant scheduler coordinating millions of tasks across nodes with at-least-once guarantees.</p>
-          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
-        </a>
-        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
-          <div class="kicker tag">Realtime</div>
-          <h3>Streaming Analytics API</h3>
-          <p>Low-latency event ingestion and querying built on Kafka and columnar storage.</p>
-          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
-        </a>
-        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
-          <div class="kicker tag">Payments</div>
-          <h3>Payments Orchestrator</h3>
-          <p>Secure, idempotent payment flows with retries, reconciliation, and audit trails.</p>
-          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
-        </a>
-        <a class="card" href="https://example.com" target="_blank" rel="noreferrer">
-          <div class="kicker tag">Platform</div>
-          <h3>API Rate Limiter</h3>
-          <p>A token-bucket limiter deployed as a sidecar, protecting services from traffic spikes.</p>
-          <div class="card-cta"><span>Visit live</span><span class="mono">↗</span></div>
-        </a>
-      </div>
-    </div>
-  </section>
+  <p>/projects</p>
 
-  <section id="contact" class="alt contact">
-    <div class="kicker label">04 — Contact</div>
-    <h2>Let's build something durable.</h2>
-    <p>Open to interesting backend problems and good conversations.</p>
-    <div class="contact-action">
-      <a class="pill pill-solid pill-lg" href="mailto:hello@harishnanthan.dev">hello@harishnanthan.dev</a>
-    </div>
-    <div class="social">
-      <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
-      <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="https://x.com" target="_blank" rel="noreferrer">X / Twitter</a>
-      <a href="#">Résumé</a>
-    </div>
-  </section>
+  <p>
+    <a target="_blank" href="https://github.com/harishnanthans/games/tree/main/number-guesser">Number Guesser</a>: a
+    guessing game built on binary search &mdash; it narrows down your number in a handful of steps. Small project, but a
+    nice way to see how powerful the algorithm really is.
+  </p>
 
-  <footer>
-    <span>© 2026 Harish Nanthan</span>
-    <span class="mono">Designed quietly.</span>
-  </footer>
+  <p>
+    <a target="_blank" href="">WWE Card Game</a>: a multiplayer card game running over a WebSocket server. Built purely
+    for fun, to bring back the WWE trading cards we played with as kids.
+  </p>
 
-</main>
+  <p>
+    <a target="_blank" href="">2D Football Game</a>: a two-player 2D football game. Give it a try.
+  </p>
 
-<script>
-const themeToggle = document.getElementById('themeToggle');
-const root = document.documentElement;
+  <hr>
 
-function applyTheme(theme) {
-  root.dataset.theme = theme;
-  themeToggle.textContent = theme === 'dark' ? '☀' : '☾';
-}
+  <p>/blogs</p>
 
-const savedTheme = localStorage.getItem('theme');
-const systemPrefersDark = matchMedia('(prefers-color-scheme: dark)').matches;
-applyTheme(savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+  <p>
+    <a href="posts/cache-blog.html">How we cached six simultaneous AI agent API calls</a>: caching six parallel AI calls
+    from the server against a ticketing system.
+  </p>
 
-themeToggle.addEventListener('click', () => {
-  const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-  applyTheme(nextTheme);
-  localStorage.setItem('theme', nextTheme);
-});
-</script>
+  <hr>
+
+  <p>/work</p>
+
+  <p>
+    <a href="posts/clock-in-clock-out.html">Clock In / Clock Out system</a>: how we track user activity across a large
+    enterprise support portal.
+  </p>
+
+  <p>
+    <a href="posts/mcp-server.html">MCP server</a>: how we built our own MCP server for our enterprise support portal.
+  </p>
+
+  <hr>
+
+  <p>
+    <small>Last update: 23 August 2026.</small>
+  </p>
+
 </body>
+
 </html>
